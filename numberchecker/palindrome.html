@@ -1,0 +1,31 @@
+ <!--Palindrome Checker
+Palindrome wo number hai jo ulta karne par bhi same rehta hai.-->
+
+<html>
+    <head>
+ 
+    <script>
+        var n = parseInt(prompt("Enter number to check Palindrome"));
+        //palindrrome 
+        var temp = n;
+        var r = 0;
+       while(n > 0) {
+       var digit = n % 10;
+       r = r * 10 + digit;
+       n = parseInt(n / 10);
+     }
+     if(temp === r) {
+       document.write(temp + " is a Palindrome number");
+      } else {
+      document.write(temp + " is not a Palindrome number");
+     }
+</script>
+
+            
+    
+    </head>
+    <body>
+        
+
+    </body>
+</html>
